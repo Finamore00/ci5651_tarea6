@@ -113,7 +113,7 @@ func main() {
 		var i, j int32 = elem[0], elem[1]
 		subArrSize := min(j-i, int32(len(arr))-j)
 		//Se realiza la separación del arreglo
-		var a, b, c, d, e, f, g, h *TreapNode
+		var a, b, c, d, e, f, g, h *TreapNode //Nombrar variables es mi pasion
 		split(root, &a, &b, i)
 		split(b, &c, &d, subArrSize)
 		split(d, &e, &f, j-(i+subArrSize))
