@@ -340,7 +340,7 @@ func main() {
 		nodes = append(nodes, newNode(i))
 	}
 
-	//Agregar aristas
+	//Agregar aristas. Es el mismo grafo de ejemplo de la clase :)
 	t := newTree(13)
 	t.addEdge(&(nodes[0]), &(nodes[1]), rand.Int()%2 == 0)
 	t.addEdge(&(nodes[0]), &(nodes[2]), rand.Int()%2 == 0)
@@ -368,17 +368,19 @@ func main() {
 
 	//Check de que las cadenas se forman bien, si quiere verlas descomentar
 	// knownChains := map[*Chain]bool{}
+	// counter := 0
 	// for k := range t.adj {
 	// 	_, ok := knownChains[k.chain]
 	// 	if !ok {
 	// 		knownChains[k.chain] = true
 	// 		top := k.chain.topNode
-	// 		fmt.Printf("Cadena del %d: ", top.value)
+	// 		fmt.Printf("Cadena %d: ", counter)
 	// 		for top != nil {
 	// 			fmt.Printf("%d, ", top.value)
 	// 			top = top.chainChild
 	// 		}
 	// 		fmt.Printf("\n")
+	// 		counter += 1
 	// 	}
 	// }
 
